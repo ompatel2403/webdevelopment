@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* element selectors*/
+        div{
+            background-color: rgb(0, 0, 0);
+            color: whitesmoke;
+        }
+
+        /* class selectors */
+        /* .red{
+            background-color: black;
+            color: aliceblue; 
+        }  */
+
+        /* ID selectors */
+        #Green{
+            background-color: green;
+        }
+
+        /* child selectors */
+        div>p{
+            color: blue;
+            background-color: red;
+        }
+
+        /* Descendant selectors */
+        div p{
+            color: blue;
+            background-color: red;
+        }
+
+        /* universal selector */
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        /* pseudo Selector */
+        a:visited{
+            color:mediumslateblue;
+        }
+        a:link{
+            color:deepskyblue ;
+        }
+        a:active{
+            background-color: darkblue;
+        }
+        a:hover{
+            background-color:rgb(37, 13, 255);
+        }
+
+
+
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="one">
+        <p>I am one</p>
+        <p>I am second</p>
+    </main>
+
+    <div class="red">
+        I am a Div
+        <article>
+            <p>
+                I am pragraph inside div
+            </p>
+        </article>
+    </div>
+    <div id="Green">
+        I Am another Div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to facebook</a>
+    
+</body>
+</html>

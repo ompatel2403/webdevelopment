@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First Web Page</title>
+    <link rel="icon" href="downloads/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+
+                                <!-- rel herf = relative referance-->
+
+</head>
+
+<body>
+
+    <header>
+        <h1>My Goals for The Year</h1>
+        
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">learn Html</a>
+                </li>
+                <li>
+                    <a href="#vacation">Plannig a vcation</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <article id="html">
+
+            <h2>I'm ready to learn HTML</h2>
+            <p>This is my first website</p>
+            <section>
+                <h3>HTML5</h3>
+                <img src="downloads/html_logo_300x300.png" alt="HTML5 logo" title="I'm learning HTML5" height="300" width="300">
+                <figure>
+
+                    <figcaption>An Example of HTML5 code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                    </p>
+
+                </figure>
+            </section>
+            <section>
+                <h3>My Daily Schedule</h3> 
+                <p>Let mw tell you how: </p>
+
+                <ol>  <!--<ol> means orderd list and <li> means list-->
+                    <li>....I learn more about web development.</li>    <!--&nbsp; is use for spaces-->
+                    <li>....I plan out my schedule.</li>
+                    <li>....I use resources from <abbr title="Mozzila Development Network"><a href="https://developer.mozilla.org/en-US/" >MDN</a>.</abbr></li>
+                </ol>
+                <aside>     <!--aside has some meaning that it's complementary text -->
+                    <details>                  <!-- detais and summary is work togather we can hus for showing product details or information or return policy etc...-->
+                        <summary>Guess the <mark>number of hour</mark> I code per day</summary>
+                        <P>
+                            I start at <time datetime="08:00">8 am</time> and i write code for<time datetime="PT3H">3 hour</time> every morning
+                        </P>
+                    </details>
+                </aside>
+                <br>
+                <table>
+                    <caption>My Daily Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td>
+                                <time datetime="8:00">8am</time>-<time datetime="11:00">11am</time>
+                            </td>
+                            <td>Write code</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Break</th>
+                            <td>
+                                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                            </td>
+                            <td>Eat Lunch</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Afternoon</th>
+                            <td>
+                                <time datetime="12:00">12pm</time>-<time datetime="5:00">5pm</time>
+                            </td>
+                            <td>Study for other cources</td>
+                            <tr>
+                                <th scope="row">Evenig</th>
+                                <td rowspan="2">All Other times</td>
+                                <td>Free time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Night</th>
+                                <td>Sleep</td>
+                            </tr>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">And that's what I do every day, 5 days a week. Just eat, sleep, code ..and recharge!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+        
+                                    <!--a herf = absolute referance-->                   
+
+        <hr>
+
+        <article id="vacation">
+
+            <h2>I'm also planning a vacation</h2>
+            <p>I've been working hard and <em>really need g getaway</em>.</p> <!--<em> is use for italic sentance-->
+            <p>I live in surat so i want visit a Dubai which is nearest arebian country from India</p>
+            
+            <section>
+                <h3>Place I'd like to visit</h3>
+
+                <ul>  <!--<ul> means unorderd list and <li> means list-->
+                    <li>
+                        <p>I've heard good thing about the arebian.</p>
+
+                        <figure>
+                            <img src="downloads/dubai.jpg" alt="Dubai form air" title="I want to visit Dubai" height="300" width="500" loading="lazy">
+                            <figcaption>
+                                Sunset like this in Dubai
+                            </figcaption>
+                        </figure>   
+                    </li>
+                    
+                    <li>
+                        <p>I've heard good things about going here:</p>
+
+                        <address>
+                            Sheikh Mohammed Bin Rashed Boulevard Downtown Dubai<br>
+                            PO Box 27443 Dubai,<br>
+                            UAE.
+                        </address>
+                        <figure>
+                            <img src="downloads/burj-khalifa.jpeg" alt="Burj Khalifa" title="I want to stay one night in burj khalifa" height="300" width="500" loading="lazy">
+                        <figcaption>
+                            World's tallest Building Ever
+                        </figcaption>
+                        </figure>
+                    </li>    
+                </ul>
+            
+            </section>
+            
+            <section>
+                <h3>Place I want to avoid</h3>
+            
+                <dl>  <!--<dl> means description list -->
+                        
+                    <dt>Pakistan</dt>    <!--<dt> means description terms -->  
+                    <dd>Becuse there live <strong>converted muslims</strong></dd>    
+
+                    <dt>Afghanistan</dt>     
+                    <dd>There also live converted muslims</dd>  <!--<dd> means description data-->    
+
+                    <dt>Iraq</dt>
+                    <dd>There also live converted muslims</dd>  
+
+                </dl>        
+            </section>
+        </article>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Om Patel</a> &gt;&gt;&gt;
+        </p>    
+        <p>
+
+            <a href="#">Back to top</a>
+            
+        </p>
+
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
