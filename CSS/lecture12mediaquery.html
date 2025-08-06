@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediaquery</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+
+        @media only screen and (max-width: 400px){
+            body{
+                background-color: yellow;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        @media only screen and (orientation: landscap){
+ 
+            body{
+            border: 3px solid black;
+        }
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: deepskyblue;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .boxes{
+            display: flex;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        My name is om patel
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
